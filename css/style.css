@@ -2411,7 +2411,9 @@ table td {
 }
 
 .about {
+  position: relative;
   padding: 10vh 0;
+  margin-bottom: 0;
 }
 .about .group {
   align-items: center;
@@ -2470,6 +2472,9 @@ table td {
 }
 .services .group {
   margin: 0 -1em;
+}
+.services .section-heading {
+  margin-bottom: 5vh;
 }
 .services-item {
   width: calc(25% - 2em);
@@ -2540,4 +2545,16 @@ table td {
 }
 .services-lower-item button:hover, .services-lower-item button:focus {
   background: rgba(255, 255, 255, 0.25);
+}
+.services-lower-item button.open .arrow i {
+  transform: rotateZ(225deg);
+  opacity: 1;
+}
+.services-lower-item-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 180ms ease;
+}
+.services-lower-item-panel > *:last-of-type {
+  margin-bottom: 1em;
 }

@@ -11,6 +11,10 @@
         margin: 0 -1em;
     }
 
+    .section-heading {
+        margin-bottom: 5vh;
+    }
+
     &-item {
         width: calc(25% - 2em);
         margin: 1em;
@@ -76,6 +80,26 @@
                 &:hover,
                 &:focus {
                     background: rgba(#fff, 0.25);
+                }
+
+                &.open {
+
+                    .arrow {
+                        i {
+                            transform: rotateZ(225deg);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            &-panel {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height $transition-1;
+
+                > *:last-of-type {
+                    margin-bottom: 1em;
                 }
             }
         }
