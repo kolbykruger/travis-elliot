@@ -40,10 +40,11 @@ $button-background: $color-1;
     display: inline-flex;
     align-items: center;
     margin: 0;
-    padding: 0.75em 1em;
+    padding: 1.125em 2em;
     background: $button-background;
     color: $button-color;
-    border-radius: 0.25em;
+    font-weight: 500;
+    border-radius: 0.75em;
     line-height: 1;
     transition: 150ms ease;
     text-decoration: none;
@@ -97,7 +98,44 @@ $button-background: $color-1;
             border-color: $color-2
         }
     }
-    
+
+    &-text {
+        background: rgba($color-0,0.75);
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+
+        &:hover,
+        &:focus {
+            background: rgba($color-0, 1);
+            color: #fff;
+        }
+
+        &-secondary {
+            background: rgba($color-2, 0.75);
+
+            &:hover,
+            &:focus {
+                background: rgba($color-2, 1);
+                color: #fff;
+            }
+        }
+
+        &-tertiary {
+            background: rgba($color-1, 0.75);
+
+            &:hover,
+            &:focus {
+                background: rgba($color-1, 1);
+                color: #fff;
+            }
+        }
+    }
+
+    &-size-small {
+        padding: 1em 1.5em;
+    }
+
     &[disabled] {
         background: $color-grey-1;
         color: $color-0;

@@ -1,14 +1,23 @@
 .header {
 
+    body#home & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
     .container {
         position: relative;
-        max-width: $container-width;
+        max-width: 100%;
         width: 100%;
+        padding: 1em 2em;
     }
 
     .group {
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .logo {
@@ -21,6 +30,7 @@
 
         img {
             width: 100%;
+            filter: drop-shadow(2px 2px 72px rgba(0,0,0,0.7));
         }
     }
 

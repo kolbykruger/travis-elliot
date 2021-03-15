@@ -8,7 +8,7 @@
         padding: 0;
 
         ul {
-            border-radius: 0.25em;
+            border-radius: 0.75em;
             padding: 0;
             left: 0;
             opacity: 0;
@@ -24,8 +24,9 @@
 
             a {
                 @include fs(13px);
-                padding: 10px;
+                padding: 1em;
                 margin: 0;
+                color: $color-0;
 
                 &:hover,
                 &:focus {
@@ -41,7 +42,7 @@
         align-items: center;
 
         > li {
-            margin: 0 0 0 32px;
+            margin: 0 0 0 3em;
         }
 
         li:last-child ul {
@@ -58,7 +59,7 @@
         &.open {
 
             > a {
-                color: $color-1;
+                color: $color-0;
             }
 
             ul {
@@ -70,19 +71,20 @@
     }
 
     a {
-        @include fs(16px);
+        @include fs(18px);
         display: block;
-        color: $color-0;
+        color: #fff;
         text-decoration: none;
+        font-weight: 500;
         transition: $transition-1;
 
         &:hover,
         &:focus {
-            color: $color-1;
+            color: $color-0;
         }
 
         i {
-            @include fs(12px);
+            @include fs(16px);
             cursor: pointer;
             margin: 0 0 0 6px;
         }
