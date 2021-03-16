@@ -22,7 +22,7 @@
             transition: opacity 0.35s;
             overflow: hidden;
 
-            a {
+            a:not(.button) {
                 @include fs(13px);
                 padding: 1em;
                 margin: 0;
@@ -30,7 +30,7 @@
 
                 &:hover,
                 &:focus {
-                    background: $color-grey-2;
+                    background: $color-grey-1;
                 }
             }
         }
@@ -43,6 +43,10 @@
 
         > li {
             margin: 0 0 0 3em;
+
+            > a {
+                text-shadow: 2px 8px 6px rgb(0 0 0 / 10%), 0px -5px 35px rgb(0 0 0 / 20%);
+            }
         }
 
         li:last-child ul {
@@ -70,7 +74,7 @@
         }
     }
 
-    a {
+    a:not(.button) {
         @include fs(18px);
         display: block;
         color: #fff;

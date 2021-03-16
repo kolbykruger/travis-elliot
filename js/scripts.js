@@ -1,3 +1,11 @@
+//Video Autoplay
+document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('impression-video')
+    if (video) {
+        video.play()
+    }
+})
+
 //Blog Categories (if a selectbox)
 let blogCategories = {
     elem: document.querySelector('select#blog_categories'),
@@ -52,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 panel.setAttribute('aria-expanded', false)
             } else {
                 this.classList.add('open')
-                panel.style.maxHeight = panel.scrollHeight + 'px'
+                panel.style.maxHeight = panel.scrollHeight + 32 + 'px'
                 panel.setAttribute('aria-hidden', false)
                 panel.setAttribute('aria-expanded', true)
             }
@@ -81,6 +89,18 @@ $('.slideshow .container').flickity({
     pageDots: true,
     imagesLoaded: true,
     autoPlay: 5000,
+})
+
+$('.testimonials .group').flickity({
+    cellSelector: '.testimonials-item',
+    wrapAround: true,
+    adaptiveHeight: false,
+    cellAlign: 'center',
+    prevNextButtons: false,
+    pageDots: true,
+    imagesLoaded: true,
+    autoPlay: 5000,
+    groupCells: 2,
 })
 
 //Universal Tables

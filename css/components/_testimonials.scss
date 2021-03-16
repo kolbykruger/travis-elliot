@@ -1,0 +1,95 @@
+.testimonials {
+    padding: 5vh 0;
+
+    .container {
+
+    }
+
+    .section-heading {
+        margin-bottom: 3em;
+    }
+
+    .flickity-viewport {
+        width: 100%;
+    }
+
+    .group {
+
+    }
+
+    &-item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: calc(50% - 2em);
+        padding: 3em;
+        margin: 1em;
+        min-height: 300px;
+        background: rgba(#fff, 0.25);
+        border-radius: 0.75em;
+        box-shadow: $box-shadow-3;
+
+        .quote {
+
+        }
+
+        .quotee {
+            margin-top: 1em;
+
+            .person {
+                font-weight: 600;
+                text-align: right;
+                font-size: 1.25rem;
+            }
+        }
+
+        &::before {
+            content: '“';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18rem;
+            line-height: 1;
+            font-family: sans-serif;
+            opacity: 0.1;
+            transform: translate(0, -8%);
+        }
+
+        &::after {
+            content: '”';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 18rem;
+            line-height: 1;
+            font-family: sans-serif;
+            opacity: 0.1;
+            transform: translate(1px, 61%);
+        }
+
+        &::before,
+        &::after {
+            color: $color-0;
+            mix-blend-mode: multiply;
+        }
+
+        &:nth-of-type(1) {
+            background: $color-1;
+            color: #fff;
+        }
+
+        &:nth-of-type(2) {
+            background: $color-2;
+        }
+
+        &:nth-of-type(3) {
+            background: $color-3;
+        }
+
+        &:nth-of-type(4) {
+            background: $color-4;
+            color: #fff;
+        }
+    }
+}
