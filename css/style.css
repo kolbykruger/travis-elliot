@@ -2567,10 +2567,10 @@ table td {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: calc(50% - 2em);
+  width: calc(50% - 4em);
   max-width: 500px;
   padding: 3em;
-  margin: 1em;
+  margin: 2em;
   min-height: 320px;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 0.75em;
