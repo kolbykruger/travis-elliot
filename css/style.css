@@ -2577,9 +2577,9 @@ table td {
   transition: transform 240ms, filter 240ms, opacity 240ms;
 }
 .testimonials-item:not(.is-selected) {
-  transform: scale(0.9);
-  filter: blur(6px);
-  opacity: 0.75;
+  transform: scale(0.92);
+  filter: blur(8px);
+  opacity: 0.6;
 }
 .testimonials-item .quotee {
   margin-top: 1em;
