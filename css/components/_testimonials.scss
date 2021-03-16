@@ -2,7 +2,7 @@
     padding: 5vh 0;
 
     .container {
-
+        max-width: 100%;
     }
 
     .section-heading {
@@ -23,12 +23,20 @@
         justify-content: space-between;
         flex-direction: column;
         width: calc(50% - 2em);
+        max-width: 500px;
         padding: 3em;
         margin: 1em;
         min-height: 300px;
         background: rgba(#fff, 0.25);
         border-radius: 0.75em;
         box-shadow: $box-shadow-3;
+        transition: transform 240ms, filter 240ms, opacity 240ms;
+
+        &:not(.is-selected) {
+            transform: scale(0.9);
+            filter: blur(6px);
+            opacity: 0.75;
+        }
 
         .quote {
 

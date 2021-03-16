@@ -96,7 +96,7 @@ $('.testimonials .group').flickity({
     wrapAround: true,
     adaptiveHeight: false,
     cellAlign: 'center',
-    prevNextButtons: false,
+    prevNextButtons: true,
     pageDots: true,
     imagesLoaded: true,
     autoPlay: 5000,
