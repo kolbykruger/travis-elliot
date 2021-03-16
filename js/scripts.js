@@ -99,7 +99,7 @@ $('.testimonials .group').flickity({
     prevNextButtons: true,
     pageDots: true,
     imagesLoaded: true,
-    autoPlay: 5000,
+    autoPlay: 8000,
     groupCells: 2,
 })
 
